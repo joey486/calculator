@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>  
+        <link rel="icon" href="images/pi.png">
+        <meta charset="UTF-8">
+        <mata name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>     
+       <link rel="stylesheet" href="calculatorStyles.css">
+    </head>
+
+    <body style="background-color: black;">
+        <div style="position: fixed; top: 0px; left: 0px;"> 
+            <a href="V1/index.html">Home</a>
+        </div>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="videos/ambiant red.mp4">
+        </video>
+
+        <div class="cursor-dot" data-cursor-dot></div>
+        <div class="cursor-outline" data-cursor-outline></div>
+
+        <div id="calculator" class="object">
+            <input id="display" readonly>
+            <div id="keys">
+
+                <!--numbers & simple functions-->
+                <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>              
+                <button onclick="appendToDisplay('* Math.PI/180')" class="operator-btn">°</button>
+                <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="showAnswer()"  class="operator-btn">ans</button>             
+                <button onclick="appendToDisplay('*')" class="operator-btn">×</button>             
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('0')">0</button>      
+                <button onclick="appendToDisplay('/')" class="operator-btn">÷</button>
+                <button onclick="appendToDisplay('.')" class="operator-btn">.</button>             
+                <button onclick="calculate()" class="operator-btn">=</button>               
+                <button onclick="clearDisplay()"  class="operator-btn">C</button>        
+                <button onclick="backspace()" class="operator-btn">←</button>
+
+                <!--advanced functions-->
+                <!--works-->               
+                <button onclick="appendToDisplay('(')" class="advanced-operator-btn">(</button>
+                <button onclick="appendToDisplay(')')" class="advanced-operator-btn">)</button>
+                <button onclick="appendToDisplay('**')" class="advanced-operator-btn">^</button>                               
+                <button onclick="appendToDisplay('Math.sqrt(')" class="advanced-operator-btn">√</button>
+                <button onclick="appendToDisplay('Math.log(')" class="advanced-operator-btn">ln</button>               
+                <button onclick="appendToDisplay('Math.sin(')" class="advanced-operator-btn">sin</button>
+                <button onclick="appendToDisplay('Math.cos(')" class="advanced-operator-btn">cos</button>
+                <button onclick="appendToDisplay('Math.tan(')" class="advanced-operator-btn">tan</button>                   
+                <button onclick="appendToDisplay('Math.PI')" class="advanced-operator-btn">π</button>
+                <button onclick="appendToDisplay('Math.E')" class="advanced-operator-btn">e</button>          
+                
+                <!--avanced level 2-->
+                <button onclick="appendToDisplay('Math.log10(')" class="advanced-operator-btn">log</button>
+                <button onclick="appendToDisplay('Math.abs(')" class="advanced-operator-btn">abs</button>                
+                <button onclick="appendToDisplay('!')" class="advanced-operator-btn">!</button>              
+                <button onclick="appendToDisplay('%')" class="advanced-operator-btn">%</button>
+                
+                <!--does not work-->
+                <!--
+                -->
+                
+            </div>
+        </div>
+
+        <script src="calculatorIndex.js"></script>
+    </body>
+</html>

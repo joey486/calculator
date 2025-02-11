@@ -1,0 +1,23 @@
+cursor #1:
+    html:    
+        <div id="circle"></div>
+
+    js:
+    document.addEventListener('mousemove', (e) => {
+    const circle = document.getElementById('circle');
+    circle.style.left = `${e.pageX - circle.offsetWidth / 2}px`;
+    circle.style.top = `${e.pageY - circle.offsetHeight / 2}px`;
+    });
+    
+    css:
+    #circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    border-color: white;
+    position: absolute;
+    z-index: 1000;
+    pointer-events: none; /* Ensures the circle does not capture mouse events */
+    transition: transform 0.2s ease-in-out; /* Smooth transition for movement */
+    }

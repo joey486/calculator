@@ -1,0 +1,76 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  height: 10px;
+  background-color: black;
+  margin: 0rem;
+  overflow: hidden;
+  cursor: none;
+}
+  
+  #image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%); 
+    user-select: none; /* -- Prevent image highlighting -- */
+  }
+  
+  #image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+    cursor: none;
+  }
+
+  #image-track > .link_image {
+    width: 40vmin;
+    height: 56vmin; 
+    object-fit: cover;
+    object-position: 100% center;
+  }
+  
+  #box{
+    position: fixed;
+    top: 4%;
+    font: 5em sans-serif;
+    color: white;
+    right: 40%;
+  }
+
+  #box1{
+    position: fixed;
+    justify-self: center;
+    top: 15%;
+    font: 2em sans-serif;
+    color: white;
+    right: 42%;
+  }
+
+/*curser:*/
+
+  .cursor-dot{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0 ,0% ,100% ,0.5);
+}
+
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}

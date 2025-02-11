@@ -1,0 +1,126 @@
+#body{
+    display: flex;
+    /* margin: 0;
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0,0%,95%); */
+}
+
+/*the calculator looks*/
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0,0%,15%);
+    border-radius: 30px; 
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-self: center;
+    cursor: none;
+    /* top: 200px; */
+    right: -32%;
+    height: 95vmin;
+    width: 80vmin; 
+}
+
+/*the display looks & mechanics*/
+#display{
+    width: 100%;
+    padding: 40px;
+    font-size: 2rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0,0%,20%);
+    color: white;
+    cursor: none;
+    height: 50px;
+}
+
+/*the key looks & mechanics*/
+#keys{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2vmin;
+    padding: 20px;
+    cursor: none;
+    
+}
+
+/*the button looks & mechanics*/
+button{
+    width: 55px; 
+    height: 55px;
+    border-radius: 150px;
+    border: none;
+    background-color: hsl(0,0%,30%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: none;
+}
+
+button:hover{
+    background-color: hsl(0,0%,40%);
+}
+
+button:active{
+    background-color: hsl(0,0%,50%);
+}
+
+.operator-btn{
+    background-color: hsl(25,100%,55%);
+}
+
+.operator-btn:hover{
+    background-color: hsl(25,100%,65%);
+}
+
+.operator-btn:active{
+    background-color: hsl(25,100%,75%);
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    cursor: none;
+}
+
+.advanced-operator-btn{
+    background-color: 	hsl(120, 100%, 40%);
+}
+
+.advanced-operator-btn:hover{
+    background-color: hsl(120, 100%, 50%);
+}
+
+.advanced-operator-btn:active{
+    background-color: hsl(120, 100%, 60%);
+}
+
+.cursor-dot{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0 ,0% ,100% ,0.5);
+}
+
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+

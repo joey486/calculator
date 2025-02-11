@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="images/צילום מסך 2024-05-13 155750.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vector Calculator</title>
+  <link rel="stylesheet" href="vectorStyle.css">
+</head>
+
+
+<body>
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
+  <div class="container">
+    <div class="content">
+      <form id="vectorForm">
+        <h2>Vector Calculator</h2>
+        <div class="buttonLayout">
+          <button type="button" onclick="toggleDimension()">Toggle Dimension</button><br>
+          <button type="button" onclick="calculate('sum')">Calculate Sum</button>
+          <button type="button" onclick="calculate('subtract')">Calculate Subtraction</button>
+          <button type="button" onclick="calculate('dot')">Calculate Dot Product</button>
+          <button type="button" onclick="calculate('cross')">Calculate Cross Product</button>
+          <button type="button" onclick="calculate('angle')">Calculate Angle</button>
+          <button type="button" onclick="clearInputs()">Clear Inputs</button>
+        </div>
+        <label for="vector1x">Vector X<sub>1</sub>:</label>
+        <input type="number" id="vector1x" step="any" required><br>
+        <label for="vector1y">Vector Y<sub>1</sub>:</label>
+        <input type="number" id="vector1y" step="any" required><br>
+        <label id="vector1zLabel" for="vector1z">Vector Z<sub>1</sub>:</label>
+        <input type="number" id="vector1z" step="any"><br>
+        <label for="vector2x">Vector X<sub>2</sub>:</label>
+        <input type="number" id="vector2x" step="any" required><br>
+        <label for="vector2y">Vector Y<sub>2</sub>:</label>
+        <input type="number" id="vector2y" step="any" required><br>
+        <label id="vector2zLabel" for="vector2z">Vector Z<sub>3</sub>:</label>
+        <input type="number" id="vector2z" step="any"><br>
+      </form>
+      <!-- <br> -->
+      <p id="result"></p>
+    </div>
+    <div class="visual-box">
+      <h3>Vector Visualization</h3>
+      <canvas id="vectorCanvas" width="300" height="300"></canvas> <!-- This is where the vectors will be displayed -->
+    </div>
+  </div>
+  <script src="vectorIndex.js"></script>
+</body>
+
+</html>
