@@ -39,6 +39,7 @@ body {
     font: 5em sans-serif;
     color: white;
     right: 40%;
+    user-select: none;
   }
 
   #box1{
@@ -48,6 +49,7 @@ body {
     font: 2em sans-serif;
     color: white;
     right: 42%;
+    user-select: none;
   }
 
 /*curser:*/
