@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SymboMath</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
-
-<div class="cursor-dot" data-cursor-dot></div>
-<div class="cursor-outline" data-cursor-outline></div>
-
 <body>
-    <div id="box">Welcome!</div>
-    <div id="box1">Choose a calculator</div>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">פרגנו לי</div>
+            <div class="social-links">
+                <a href="#">&#9993;</a>
+                <a href="#">&#128279;</a>
+                <a href="https://www.linkedin.com/in/yosef-heifetz-64b6031b5/">🧑‍💼</a>
+                <a href="#">&#128214;</a>
+            </div>
+        </div>
 
-    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-        <a href="https://calcutalor.onrender.com" class="image">
-            <img style="height: 56vmin; width: 40vmin;" src="images/img2.jpg" draggable="false" /></a>
-        <a href="https://vector-calculator-51p8.onrender.com" class="image">
-            <img style="height: 56vmin; width: 40vmin;" src="images/img1.jpg" draggable="false" /></a>
-        <img class="image" src="images/img3.jpg" draggable="false" />
-        <img class="image" src="images/img4.jpg" draggable="false" />
-        <img class="image" src="images/img5.jpg" draggable="false" />
-        <img class="image" src="images/img6.jpg" draggable="false" />
-        <img class="image" src="images/img7.jpg" draggable="false" />
+        <!-- Main Content -->
+        <div class="content">
+            <a href="https://calcutalor.onrender.com" class="card article" id="card1">
+                <div class="tag">LINK</div>
+                <h2>Simple calculator</h2>
+            </a>
+            <div class="card info">
+                <h2>שלום &#128075;</h2>
+                <p>זה מחשבון רב שימושי לסטודנט הממוצע</p>
+            </div>
+            <a href="https://vector-calculator-51p8.onrender.com" class="card article" id="card2">
+                <div class="tag">LINK</div>
+                <h2>Vector calculator</h2>
+            </a>
+            <a href="https://vite-calculus-calculator.onrender.com/" class="card article" id="card3">
+                <div class="tag">LINK</div>
+                <h2>Calculus calculator</h2>
+            </a>
+        </div>
     </div>
-    <script src="index.js"></script>
 </body>
- 
+</html>
