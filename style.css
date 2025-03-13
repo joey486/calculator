@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to right, #141e30, #243b55);
@@ -6,16 +7,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
+  user-select: none;
 }
 
+/* Responsive Container */
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 20px;
   max-width: 1200px;
-  width: 100%;
+  width: 90%;
   padding: 20px;
 }
 
@@ -56,6 +59,7 @@ body {
   gap: 20px;
 }
 
+/* Card Styles */
 .card {
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
@@ -99,4 +103,56 @@ body {
 
 .card.article h2 {
   margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr; /* Stack sidebar and content */
+    padding: 15px;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .content {
+    grid-template-columns: 1fr; /* Single column for content */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .card {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    display: none; /* Hide sidebar on mobile */
+  }
+
+  .content {
+    grid-template-columns: 1fr; /* Full width content */
+  }
+
+  .card {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
