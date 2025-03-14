@@ -5,9 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SymboMath</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="background.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
+
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+
+<div class="triangle"></div>
+<div class="triangle"></div>
+<div class="triangle"></div>
+<div class="triangle"></div>
+<div class="triangle"></div>
+
+
+
 <body>
+
     <div class="container">
         <!-- Sidebar -->
         <div class="sidebar">
@@ -18,18 +42,22 @@
                 <a href="https://www.linkedin.com/in/yosef-heifetz-64b6031b5/">🧑‍💼</a>
                 <a href="https://github.com/joey486/calculator">&#128214;</a>
             </div>
+            <button id="toggle-animation">להתחיל אנימציה</button>
         </div>
             
+        <!-- Menu Button for Mobile -->
+        <button class="menu-btn" id="menu-btn">&#9776;</button>
+
         <!-- Main Content -->
         <div class="content">
-            <a href="https://calcutalor.onrender.com" class="card article" id="card1">
-                <div class="tag">LINK</div>
-                <h2>Simple calculator</h2>
-            </a>
             <div class="card info">
                 <h2>שלום &#128075;</h2>
                 <p>זה מחשבון רב שימושי לסטודנט הממוצע</p>
             </div>
+            <a href="https://calcutalor.onrender.com" class="card article" id="card1">
+                <div class="tag">LINK</div>
+                <h2>Simple calculator</h2>
+            </a>
             <a href="https://vector-calculator-51p8.onrender.com" class="card article" id="card2">
                 <div class="tag">LINK</div>
                 <h2>Vector calculator</h2>
@@ -41,4 +69,6 @@
         </div>
     </div>
 </body>
+
+<script src="script.js"></script>
 </html>
