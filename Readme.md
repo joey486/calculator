@@ -31,7 +31,7 @@
 ## Design and Technologies
 
 - **HTML5 & CSS3** – Used for layout, structure, and responsive design.
-- **JavaScript & Anime.js** – Handles interactivity and smooth animations.
+- **JavaScript & React.js** – Handles interactivity and smooth animations.
 - **Modular Styling** – `style.css` and `background.css` organize core styles and background animations.
 - **Responsive UI** – Mobile-friendly with sidebar toggle and dynamic layout.
 - **Animated Background** – Includes animated shapes for a dynamic user experience.
@@ -50,4 +50,4 @@ For feedback, suggestions, or collaboration, contact:
 **Yosef Heifetz**  
 Email: yossi.heifetz06@gmail.com  
 [LinkedIn](https://www.linkedin.com/in/yosef-heifetz-64b6031b5/)  
-[GitHub Profile](https://github.com/joey486/calculator)
+[GitHub Profile](https://github.com/joey486)
